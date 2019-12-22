@@ -1,0 +1,324 @@
+@import 'media';
+@import url(../fonts/plumb-black.ttf);
+
+html {
+    overflow: hidden;
+    max-height: 100vh;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #515173;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.bg-player__img {
+    position: absolute;
+    top: -73px;
+    left: -180px;
+    width: 975px;
+    height: 1209px;
+    background: url(../img/main/volleyball-player.png) no-repeat;
+    background-size: contain;
+    mix-blend-mode: color-burn;
+    z-index: -1;
+}
+.wrapper {
+    position: relative;
+    height: 100vh;
+    background: url(../img/main/bg-gradient.png) center no-repeat;
+    background-size: cover;
+    .navbar {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 30px;
+        .navbar-wrapper {
+            width: 100%;
+            max-width: 1920px;
+            min-height: 186px;
+            margin: auto;
+            padding-top: 40px;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            .navbar-logo {
+                position: absolute;
+                left: 50%;
+                margin-left: -179px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 359px;
+                img:first-child {
+                    width: 113px;
+                }
+                p {
+                    width: 215px;
+                    margin-left: 17px;
+                    font-family: "Plumb", sans-serif;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #515173;
+                    text-transform: capitalize;
+                }
+            }
+            .navbar-contacts {
+                position: absolute;
+                top: 40px;
+                right: 130px;
+                width: 185px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                .navbar-social {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 26px;
+                }
+                .navbar-address {
+                    display: flex;
+                    align-items: flex-end;
+                    p {
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-transform: uppercase;
+                        color: #515173;
+                        margin-left: 17px;
+                    }
+                }
+            }
+
+        }
+    }
+    .main {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-bottom: 145px;
+        padding-right: 58px;
+        .content {
+            width: 80vmax;
+            display: flex;  
+            justify-content: space-between;
+            align-items: flex-end;
+            .content-data {
+                width: 100%;
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    height: 12vmax;
+                    margin-bottom: 10px;
+                    .news {
+                        background: #C6C6E0;
+                    }
+                    .card-men {
+                        background: linear-gradient(213.97deg, #92BEE2 -7.08%, #EEEEEE 102.54%);
+                    }
+                    .card-women {
+                        background: linear-gradient(214.92deg, #EAA3B4 0%, #F6D5C6 102.44%);
+                    }
+                    .card-youth {
+                        background: linear-gradient(213.97deg, #DFB889 -7.08%, #E5EBD5 102.54%); 
+                    }
+                    .card-upcoming {
+                        background: linear-gradient(214.92deg, #A0D8DF 0%, #E4FFEF 102.44%);
+                    }
+                    .col {  
+                        height: 100%;
+                        box-sizing: border-box;
+                    }
+                    .col-1 {
+                        width: calc(33.33% - 20px);
+                        margin-right: 20px;
+                    }
+                    .col-2 {
+                        width: calc(66.66% - 20px);
+                        margin-right: 20px;
+                    }
+                }
+                .row:last-child {
+                    margin-bottom: 0px !important;
+                }
+            }
+            .sponsors {
+                width: 282px;
+                height: 25vmax;
+                background: #515173;
+                .card-title {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+                .sponsors-content {
+                    padding: 0px 24px;
+                    a {
+                        display: block;
+                        margin-bottom:11px;
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+                    a:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+// .card:before {
+//     content: "";
+//     position: absolute;
+//     top: 0px;
+//     left: 0px;
+//     background: radial-gradient(50% 50% at 50% 50%, #8484A2 0%, rgba(132, 132, 162, 0) 100%);
+//     width: 676.23px;
+//     height: 309.11px;
+//     z-index: -1;
+// }
+.card {
+    position: relative;
+    border-radius: 15px;
+    z-index: 10;
+    overflow: hidden;
+    .card-title {
+        padding: 13px 15px 13px 15px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #515173;      
+    }
+    .card-content {
+        height: calc(100% - 42px);
+        .card-content__item {
+            height: 50%;
+            border-radius: 15px 15px 0px 0px;
+            .card-item__date {
+                padding-top: 10px;
+                text-align: center;
+            }
+            .card-data {
+                display: flex;
+                padding: 11px 15px;
+                .card-team {
+                    width: 40%;
+                    p:first-child {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                    .card-city {
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #8484A2;
+                    }
+                }
+                .card-team.align-right {
+                    text-align: right;
+                }
+                .card-score {
+                    width: 20%;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: center;
+                    color: #515173;
+                }
+            }
+        }
+        .card-content__item:nth-child(2) {
+            margin-top: -5px;
+        }
+    }
+    .card-content__item.men {
+        background: linear-gradient(192.77deg, #92BEE2 -7.08%, #EEEEEE 102.54%);
+    }
+    .card-content__item.women {
+        background: linear-gradient(193.21deg, #EAA3B4 0%, #F6D5C6 102.44%);
+    }
+    .card-content__item.youth {
+        background: linear-gradient(192.77deg, #DFB889 -7.08%, #E5EBD5 102.54%);
+    }
+    .card-content__item.upcoming {
+        background: linear-gradient(193.21deg, #A0D8DF 0%, #E4FFEF 102.44%);
+    }
+    .card-body {
+        height: calc(100% - 40px);
+        .card-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0px 12px 18px 15px;
+            height: -webkit-fill-available;
+            .card-item {
+                background: #EAEFFC;
+                border-radius: 15px;
+                display: block;
+                padding: 8px 10.1px 5px 13px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                width: 48%;
+                max-height: 42px;
+                .card-info {
+                    display: flex;
+                    justify-content: space-between;
+                    span {
+                        display: block;
+                        font-size: 10px;
+                        line-height: 12px;
+                        color: #8484A2;
+                    }
+                }
+                .card-message p {
+                    font-size: 10px;
+                    line-height: 11px;
+                    color: #022C49;
+                }
+            }
+        }
+    }
+}
+.popup-news {
+    display: none;
+}
+// .card:hover {
+//     margin-top: -10px;
+//     margin-left: -10px;
+// }
+// .sponsors:hover {
+//     margin-left: 0px !important;
+//     margin-top: -20px !important; 
+// }
+
