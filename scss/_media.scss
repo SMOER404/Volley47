@@ -7,8 +7,19 @@
         height: 1209px !important;
         background: url(../img/main/volleyball-player-xl.png) no-repeat !important; 
     }
+    .wrapper .navbar .navbar-wrapper {
+        max-width: 100%;
+        margin: 0px 162px 0px 262px;
+    }
+    .wrapper .navbar .navbar-wrapper .navbar-contacts {
+        right: 0px !important;
+    }
+    .wrapper .main .content .sponsors {
+        width: 343px !important;
+        height: 22vmax !important;
+    }
 }
-@media (min-width: 1920px) and (max-width: 2599px) {
+@media (min-width: 1801px) and (max-width: 2599px) {
     .bg-player__img {
         top: -57px;
         left: -138px;
@@ -20,8 +31,58 @@
         font-size: 14px !important;
         line-height: 16px !important;
     }
+    .col-1 {
+        max-width: calc(25% - 20px) !important;
+        margin-right: 20px !important;
+    }
+    .col-2 {
+        max-width: calc(50% - 20px) !important;
+        margin-right: 20px !important;
+    }
+    .card .card-body .card-list .card-item .card-message p {
+        font-size: 10px !important;
+        line-height: 11px !important;
+    }
+    .card .card-content .card-content__item {
+        height: 33.33% !important;
+    }
+    .card .card-body .card-list .card-item {
+        max-height: unset;
+        height: 42px;
+    }
+    .wrapper .main .content .content-data .row {
+        height: 272px !important;
+        margin-bottom: 20px !important;
+    }
+    .wrapper .main {
+        padding-right: 0px !important;
+    }
+    .wrapper .main .content {
+        width: auto !important;
+        max-width: 1595px;
+        margin: 0px 162px 0px 262px;
+    }
+    .wrapper .navbar .navbar-wrapper .navbar-contacts {
+        right: 163px !important;
+    }
+    .card .card-content .card-content__item .card-data .card-team .card-city {
+        font-size: 12px !important;
+        line-height: 14px !important;
+    }
+    .wrapper .navbar .navbar-wrapper {
+        max-width: 100% !important;
+        margin: 0px 162px 0px 262px !important;
+    }
+
+    .wrapper .navbar .navbar-wrapper .navbar-contacts {
+        right: 0px !important;
+    }
+    .wrapper .main .content .sponsors {
+        min-width: 282px;
+        height: 564px !important;
+    }
 }
-@media (min-width: 768px) and (max-width: 1919.98px) {
+@media (min-width: 768px) and (max-width: 1800.98px) {
     body {
         max-height: 100vh;
     }
@@ -85,11 +146,11 @@
         margin-bottom: 10px !important;
     }
     .col-1 {
-        width: calc(33.33% - 10px) !important;
+        max-width: calc(33.33% - 10px) !important;
         margin-right: 10px !important;
     }
     .col-2 {
-        width: calc(66.66% - 10px) !important;
+        max-width: calc(66.66% - 10px) !important;
         margin-right:  10px !important;
     }
 }
@@ -100,12 +161,10 @@
     .empty {
         display: none;
     }
-    .wrapper .main .content .content-data .row .col {
+    .wrapper .main .content .content-data .rhow .col {
         width: calc(50% - 20px);
     }
     .wrapper .main .content .content-data .row{
-        height: 18vmax;
+        height: 302px !important;
     }
 }
-
-
