@@ -19,7 +19,7 @@
         height: 22vmax !important;
     }
 }
-@media (min-width: 1801px) and (max-width: 2599px) {
+@media (min-width: 1801px) {
     .bg-player__img {
         top: -57px;
         left: -138px;
@@ -39,19 +39,24 @@
         max-width: calc(50% - 20px) !important;
         margin-right: 20px !important;
     }
+    .wrapper .main .content .content-data .row:last-child .col {
+        margin-bottom: 0px !important;
+    }
     .card .card-body .card-list .card-item .card-message p {
         font-size: 10px !important;
         line-height: 11px !important;
     }
     .card .card-content .card-content__item {
-        height: 33.33% !important;
+        height: 76px !important;
+        margin-top: 0px !important;
     }
     .card .card-body .card-list .card-item {
         max-height: unset;
         height: 42px;
     }
+    
     .wrapper .main .content .content-data .row {
-        height: 272px !important;
+        height: 302px !important;
         margin-bottom: 20px !important;
     }
     .wrapper .main {
@@ -81,11 +86,21 @@
         min-width: 282px;
         height: 564px !important;
     }
-}
-@media (min-width: 768px) and (max-width: 1800.98px) {
-    body {
-        max-height: 100vh;
+    .card .card-body .card-list .card-item {
+        margin-bottom: 20px !important;
     }
+    .card .card-body .card-list {
+        justify-content: space-between;
+    }
+    .card .card-body .card-list .card-item {
+        width: calc(50% - 10px) !important;
+        margin-right: 0px !important;
+    }
+}
+@media (min-width: 1440px) and (max-width: 1800.98px) {
+    // body {
+    //     max-height: 100vh;
+    // }
     .navbar {
         padding-top: 0px !important;
         .navbar-wrapper {
@@ -142,9 +157,6 @@
             background: url(../img/main/volleyball-player-md.png) no-repeat !important;
         }
     }
-    .row {
-        margin-bottom: 10px !important;
-    }
     .col-1 {
         max-width: calc(33.33% - 10px) !important;
         margin-right: 10px !important;
@@ -153,11 +165,32 @@
         max-width: calc(66.66% - 10px) !important;
         margin-right:  10px !important;
     }
-}
-@media (max-width: 767.98px) {
-    .bg-player__img {
-        display: none;
+    .wrapper .main .content {
+        width: auto;
+        max-width: 1158px;
     }
+    .wrapper .main .content .sponsors {
+        width: 282px;
+    }
+    .wrapper .main {
+        padding-bottom: 55px !important;
+    }
+    .wrapper .main .content .content-data .row {
+        margin-bottom: 10px !important;
+        height: 220px !important;
+    }
+}
+@media (max-width: 1439.98px) {
+    p {
+        font-size: 10px !important;
+        line-height: 11px !important;
+    }
+    .col-sm-1 {
+        width: calc(50% - 10px) !important;
+        margin-right: 10px !important;
+    }
+    .wrapper .main .content .sponsors,
+    .bg-player__img,
     .empty {
         display: none;
     }
@@ -166,5 +199,149 @@
     }
     .wrapper .main .content .content-data .row{
         height: 302px !important;
+    }
+    .wrapper .navbar .navbar-wrapper .navbar-logo {
+        position: relative !important;
+        left: 0px !important;
+        margin-left: 0 !important;
+    }
+    .navbar-contacts {
+        position: relative !important;
+        flex-direction: row !important;
+        width: auto !important;
+        right: 0px !important;
+        top: 17px !important;
+        .navbar-social {
+            width: auto !important;
+            margin-right: 27px;
+            margin-bottom: 0px !important;
+            a {
+                margin-right: 15.5px;
+                img {
+                    width: 24px;
+                }
+            }
+            a:last-child {
+                margin-right: 0px;
+            }
+        }
+        .navbar-address {
+            p {
+                width: 137px;
+                font-size: 12px;
+                line-height: 14px;
+            }
+            img {
+                width: 23px;
+            }
+        }
+    }
+    .wrapper .navbar .navbar-wrapper {
+        padding-top: 25px !important;
+        min-height: 100px !important;
+    }
+    .wrapper .navbar .navbar-wrapper .navbar-logo img:first-child {
+        width: 67px !important;
+    }
+    .wrapper .main .content .sponsors .sponsors-content {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap:wrap;
+        align-items: flex-start;
+        a {
+            width: calc(50% - 15px);
+            margin-right: 15px;
+            margin-bottom: 10px;
+        }
+        a:nth-child(even) {
+            margin-right: 0px;
+        }
+    }
+    .wrapper .main {
+        padding-right: 20px !important;
+        .content {
+            width: 594px !important;
+            .content-data {
+                .row {
+                    height: 220px !important;
+                }
+            }
+        }
+    }
+    .wrapper .main .content .sponsors {
+        height: 220px !important;
+    }
+    .card .card-body .card-list .card-item {
+        width: 100% !important;
+    }
+    .wrapper .navbar .navbar-wrapper {
+        justify-content: space-between !important;
+    }
+    .wrapper .navbar .navbar-wrapper .navbar-contacts{
+        right: 29px !important;    
+    }
+    .wrapper .navbar .navbar-wrapper .navbar-logo {
+        left: 36px !important;
+    }
+    .card .card-content .card-content__item {
+        height: 74px !important;
+    }
+    .wrapper .navbar {
+        padding-bottom: 46px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    html, body {
+        overflow-y: scroll !important;
+        max-height: auto !important;
+    }
+    .wrapper {
+        height: auto !important;
+        min-height: 1600px;
+        .main {
+            padding: 0px !important;
+            .content {
+                width: 100% !important;
+                .content-data {
+                    max-width: 282px;
+                    margin: auto;
+                    .row {
+                        height: auto !important;
+                        .col {
+                            height: 220px !important;
+                            width: 100% !important;
+                            max-width: unset !important;
+                            margin-right: 0px !important;
+                            margin-bottom: 10px !important;
+                        }
+                        .col:last-child {
+                            margin-bottom: 0px !important;
+                        }
+                    }
+                }
+                .content-data.visible-xs {
+                    .row {
+                        .sponsors {
+                            display: block !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .card .card-content .card-content__item {
+        height: 74px !important;
+    }
+    .wrapper .navbar .navbar-wrapper .navbar-contacts {
+        display: none !important;
+    }
+    .navbar-contacts .navbar-social {
+        margin-right: 0px !important;
+    }
+
+    .popup-wrapper {
+        max-width: 305px !important;
+        margin-left: -152.5px !important;
     }
 }
